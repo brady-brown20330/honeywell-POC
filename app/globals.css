@@ -145,7 +145,7 @@
   @media (min-width:768px){
   .text-md-left{text-align:left!important;}
   }
-  .text-white{color:#fff!important;}
+  .text-white{color:#fff!important;     max-width: 500px;}
   @media print{
   *,*::before,*::after{text-shadow:none!important;box-shadow:none!important;}
   a:not(.btn){text-decoration:underline;}
@@ -453,6 +453,9 @@
   .global-header .logo-container{display:flex;align-items:center;margin-bottom:10px;}
   @media (max-width:767px){
   .global-header .logo-container{margin-right:2em;margin-left:3em;}
+  }
+  .cslp-tooltip {
+    display: none;
   }
   .global-header .logo-container img{height:auto;max-width:175px;}
   .global-header .nav-container{display:flex;align-items:center;}
@@ -766,7 +769,7 @@
   @media (max-width:767px){
   .footer-content__container .responsivegrid{padding:0;background-color:#1d1d1d!important;}
   }
-  .superhero-v2 .hero-wrapper .mvp2 .container-fluid .text-red{color:#ee3124!important;}
+  .superhero-v2 .hero-wrapper .mvp2 .container-fluid .text-red{color:#ee3124!important;     max-width: 500px;}
   @media only screen and (max-width:1024px) and (min-width:768px){
   .superhero-v2 .hero-wrapper .mvp2 .container-fluid .superhero-heading{margin-left:5px!important;margin-right:50px!important;}
   }
@@ -1566,7 +1569,20 @@
   @keyframes onetrust-fade-in{0%{opacity:0;}100%{opacity:1;}}
   @keyframes otFloatingBtnIntro{0%{opacity:0;left:-75px;}100%{opacity:1;left:1%;}}
   /*! CSS Used fontfaces */
-  @font-face{font-family:'Honeywell Sans';font-style:normal;font-display:swap;font-weight:400;src:url('/fonts/HoneywellSansWeb-Book.eot');src:local("Honeywell Sans Book"),local("HoneywellSansWeb-Book"),url(https://www.honeywell.com/etc.clientlibs/baseline-tenant/clientlibs/v2/clientlib-base-v2/resources/fonts/honeywell-sans/HoneywellSansWeb-Book.eot?#iefix) format("embedded-opentype"),url(https://www.honeywell.com/etc.clientlibs/baseline-tenant/clientlibs/v2/clientlib-base-v2/resources/fonts/honeywell-sans/HoneywellSansWeb-Book.woff2) format("woff2"),url('/fonts/HoneywellSansWeb-Book.woff') format("woff");}
+  @font-face{font-family:'Honeywell Sans';font-style:normal;font-display:swap;font-weight:400;src:url('/fonts/HoneywellSansWeb-Book.woff') format("woff");}
+  @font-face{font-family:'Honeywell Sans';font-style:italic;font-display:swap;font-weight:400;src:url('/fonts/HoneywellSansWeb-BookItalic.woff') format("woff");}
+  @font-face{font-family:'Honeywell Sans';font-style:normal;font-display:swap;font-weight:500;src:url('/fonts/HoneywellSansWeb-Medium.woff') format("woff");}
+  @font-face{font-family:'Honeywell Sans';font-style:italic;font-display:swap;font-weight:500;src:url('/fonts/HoneywellSansWeb-MediumItalic.woff') format("woff");}
+  @font-face{font-family:'Honeywell Sans';font-style:normal;font-display:swap;font-weight:700;src:url('/fonts/HoneywellSansWeb-Bold.woff') format("woff");}
+  @font-face{font-family:'Honeywell Sans';font-style:italic;font-display:swap;font-weight:700;src:url('/fonts/HoneywellSansWeb-BoldItalic.woff') format("woff");}
+  @font-face{font-family:'Honeywell Sans';font-style:normal;font-display:swap;font-weight:800;src:url('/fonts/HoneywellSansWeb-Extrabold.woff') format("woff");}
+  @font-face{font-family:'Honeywell Sans';font-style:italic;font-display:swap;font-weight:800;src:url('/fonts/HoneywellSansWeb-ExtraboldItalic.woff') format("woff");}
+  @font-face{font-family:'Honeywell Sans';font-style:normal;font-display:swap;font-weight:900;src:url('/fonts/HoneywellSansWeb-Black.woff') format("woff");}
+ @font-face{font-family:'icomoonregular';font-display:swap;src:url('/fonts/mvp-icons-webfont.woff') format('woff');font-weight:normal;font-style:normal;}
+  @font-face{font-family:'icomoonregular';src:url('/fonts/mvp-icons-webfont.woff') format('woff');font-display:swap;font-weight:normal;font-style:normal;font-display:swap;}
+  
+
+  /* @font-face{font-family:'Honeywell Sans';font-style:normal;font-display:swap;font-weight:400;src:url('/fonts/HoneywellSansWeb-Book.eot');src:local("Honeywell Sans Book"),local("HoneywellSansWeb-Book"),url(https://www.honeywell.com/etc.clientlibs/baseline-tenant/clientlibs/v2/clientlib-base-v2/resources/fonts/honeywell-sans/HoneywellSansWeb-Book.eot?#iefix) format("embedded-opentype"),url(https://www.honeywell.com/etc.clientlibs/baseline-tenant/clientlibs/v2/clientlib-base-v2/resources/fonts/honeywell-sans/HoneywellSansWeb-Book.woff2) format("woff2"),url('/fonts/HoneywellSansWeb-Book.woff') format("woff");}
   @font-face{font-family:'Honeywell Sans';font-style:italic;font-display:swap;font-weight:400;src:url(https://www.honeywell.com/etc.clientlibs/baseline-tenant/clientlibs/v2/clientlib-base-v2/resources/fonts/honeywell-sans-italic/HoneywellSansWeb-BookItalic.eot);src:local("Honeywell Sans Book"),local("HoneywellSansWeb-BookItalic"),url(https://www.honeywell.com/etc.clientlibs/baseline-tenant/clientlibs/v2/clientlib-base-v2/resources/fonts/honeywell-sans-italic/HoneywellSansWeb-BookItalic.eot?#iefix) format("embedded-opentype"),url(https://www.honeywell.com/etc.clientlibs/baseline-tenant/clientlibs/v2/clientlib-base-v2/resources/fonts/honeywell-sans-italic/HoneywellSansWeb-BookItalic.woff2) format("woff2"),url('/fonts/HoneywellSansWeb-BookItalic.woff') format("woff");}
   @font-face{font-family:'Honeywell Sans';font-style:normal;font-display:swap;font-weight:500;src:url(https://www.honeywell.com/etc.clientlibs/baseline-tenant/clientlibs/v2/clientlib-base-v2/resources/fonts/honeywell-sans-medium/HoneywellSansWeb-Medium.eot);src:local("Honeywell Sans"),local("HoneywellSansWeb-Medium"),url(https://www.honeywell.com/etc.clientlibs/baseline-tenant/clientlibs/v2/clientlib-base-v2/resources/fonts/honeywell-sans-medium/HoneywellSansWeb-Medium.eot?#iefix) format("embedded-opentype"),url(https://www.honeywell.com/etc.clientlibs/baseline-tenant/clientlibs/v2/clientlib-base-v2/resources/fonts/honeywell-sans-medium/HoneywellSansWeb-Medium.woff2) format("woff2"),url('/fonts/HoneywellSansWeb-Medium.woff') format("woff");}
   @font-face{font-family:'Honeywell Sans';font-style:italic;font-display:swap;font-weight:500;src:url(https://www.honeywell.com/etc.clientlibs/baseline-tenant/clientlibs/v2/clientlib-base-v2/resources/fonts/honeywell-sans-medium-italic/HoneywellSansWeb-MediumItalic.eot);src:local("Honeywell Sans"),local("HoneywellSansWeb-MediumItalic"),url(https://www.honeywell.com/etc.clientlibs/baseline-tenant/clientlibs/v2/clientlib-base-v2/resources/fonts/honeywell-sans-medium-italic/HoneywellSansWeb-MediumItalic.eot?#iefix) format("embedded-opentype"),url(https://www.honeywell.com/etc.clientlibs/baseline-tenant/clientlibs/v2/clientlib-base-v2/resources/fonts/honeywell-sans-medium-italic/HoneywellSansWeb-MediumItalic.woff2) format("woff2"),url('/fonts/HoneywellSansWeb-MediumItalic.woff') format("woff");}
@@ -1577,6 +1593,6 @@
   @font-face{font-family:'Honeywell Sans';font-style:normal;font-display:swap;font-weight:900;src:url(https://www.honeywell.com/etc.clientlibs/baseline-tenant/clientlibs/v2/clientlib-base-v2/resources/fonts/honeywell-sans-black/HoneywellSansWeb-Black.eot);src:local("Honeywell Sans Black"),local("HoneywellSansWeb-Black"),url(https://www.honeywell.com/etc.clientlibs/baseline-tenant/clientlibs/v2/clientlib-base-v2/resources/fonts/honeywell-sans-black/HoneywellSansWeb-Black.eot?#iefix) format("embedded-opentype"),url(https://www.honeywell.com/etc.clientlibs/baseline-tenant/clientlibs/v2/clientlib-base-v2/resources/fonts/honeywell-sans-black/HoneywellSansWeb-Black.woff2) format("woff2"),url('/fonts/HoneywellSansWeb-Black.woff') format("woff");}
  @font-face{font-family:'icomoonregular';font-display:swap;src:url('https://www.honeywell.com/etc.clientlibs/baseline-tenant/clientlibs/v2/clientlib-base-v2/resources/fonts/icomoonregular/mvp-icons-webfont.woff') format('woff');font-weight:normal;font-style:normal;}
   @font-face{font-family:'icomoonregular';src:url('https://www.honeywell.com/etc.clientlibs/baseline-tenant/clientlibs/v2/clientlib-base-v2/resources/fonts/icomoonregular/mvp-icons-webfont.woff') format('woff');font-display:swap;font-weight:normal;font-style:normal;font-display:swap;}
-  
+   */
 
   
