@@ -10,7 +10,7 @@ export default function Hero({ data }) {
           <style
             dangerouslySetInnerHTML={{
               __html:
-                '\n                .mvp-hero-image {\n                    background-image: url("//honeywell.scene7.com/is/image/honeywell/sps-his-automotive-manufacturing-homepage-banner:4-5-mobile-hero");\n                }\n                @media (min-width: 768px) {\n                    .mvp-hero-image {\n                        background-image: url("//honeywell.scene7.com/is/image/honeywell/sps-his-automotive-manufacturing-homepage-banner:5-2-hero");\n                    }\n                }\n            ',
+                `\n .mvp-hero-image {\n                    background-image: url("${data.image.url}");\n                }\n                @media (min-width: 768px) {\n                    .mvp-hero-image {\n                        background-image: url("${data.image.url}");\n                    }\n                }\n            `,
             }}
           />
           <div>

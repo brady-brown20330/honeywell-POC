@@ -1,6 +1,6 @@
 export default function TextCTA({ data }) {
   return (
-    <div className="responsivegrid bg-light-gray p-30 aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--offset--default--0">
+    <div className="responsivegrid bg-light-gray p-30 aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--offset--default--0" style={{ marginTop: '50px'}}>
       <div className="aem-Grid aem-Grid--12 aem-Grid--default--12 aem-Grid--phone--12 ">
         <div className="sectiontitle section-title--h-medium text-left pt-30 pb-10 aem-GridColumn aem-GridColumn--default--12">
           {/*Anchor ID */}

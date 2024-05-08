@@ -1,31 +1,38 @@
 "use client";
 import { useState, useEffect } from "react";
 import Stack, { onEntryChange } from "../../../../../lib/index";
+import Hero from "@/components/Hero";
+import ManufacturingArticles from "@/components/ManufacturingArticles";
+import Carousel from "@/components/Carousel";
+import TextCTA from "@/components/TextCTA";
+
 
 export default function HighTech() {
 
-    // const [entry, setEntry] = useState({});
-    // const [loading, SetLoading] = useState(true);
-  
-    // const getContent = async () => {
-    //   const entry = await Stack.getElementWithRefs(
-    //     "blta86813889dab88d1",
-    //     "home_page",
-    //     ["hero_banner", "page_content.image_gallery.gallery_item.page"]
-    //   );
-    //   // console.log("homepage:", entry);
-    //   setEntry(entry);
-    //   SetLoading(false);
-    // };
-  
-    // useEffect(() => {
-    //   onEntryChange(getContent);
-    // }, []);
-  
-    // if (loading) {
-    //   return;
-    // }
-  
+  const [entry, setEntry] = useState({});
+  const [loading, SetLoading] = useState(true);
+
+  const getContent = async () => {
+    const entry = await Stack.getElementWithRefs(
+      "blt5249ab33b60f1e5a",
+      "homepage",
+      ["content.articles.card.article"]
+    );
+
+    // console.log("homepage:", entry);
+    setEntry(entry);
+    SetLoading(false);
+  };
+
+  useEffect(() => {
+    onEntryChange(getContent);
+  }, []);
+
+  if (loading) {
+    return;
+  }
+
+  console.log(entry);
     
   return (
     <>
@@ -3494,100 +3501,20 @@ export default function HighTech() {
             </div>
             <div className="responsivegrid aem-GridColumn aem-GridColumn--default--12">
               <div className="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
-                <div className="superhero superhero-v2 header1-large aem-GridColumn aem-GridColumn--default--12">
-                  {/*<sly data-sly-test="false">*/}
-                  {/*    <div class="cq-placeholder cq-marker-start" data-emptytext="SuperHero"></div>*/}
-                  {/*</sly>*/}
-                  <div className="superhero-container hero-wrapper">
-                    {/*    <div data-sly-test="false" class="cq-placeholder" data-emptytext="superhero.jcrTitle"></div>*/}
-                    <style
-                      dangerouslySetInnerHTML={{
-                        __html:
-                          '\n                .mvp-hero-image {\n                    background-image: url("//honeywell.scene7.com/is/image/honeywell/CyberInsights_Carousel2:4-5-mobile-hero");\n                }\n                @media (min-width: 768px) {\n                    .mvp-hero-image {\n                        background-image: url("//honeywell.scene7.com/is/image/honeywell/CyberInsights_Carousel2:5-2-hero");\n                    }\n                }\n            ',
-                      }}
-                    />
-                    <div>
-                      {/*
-<sly data-sly-call="" />
-*/}
-                      <div className="cq-dd-image ">
-                        <div
-                          id="superhero-2306"
-                          data-current-page="/content/honeywellbt/us/en/industries/high-tech"
-                          data-page-locale="en_us"
-                          data-asset-path="honeywell/CyberInsights_Carousel2"
-                          data-asset-name="CyberInsights_Carousel2.jpeg"
-                          data-asset-type="image"
-                          data-viewer-path="https://honeywell.scene7.com/s7viewers/"
-                          data-imageserver="https://honeywell.scene7.com/is/image/"
-                          data-videoserver="https://honeywell.scene7.com/is/content/"
-                          data-contenturl="//honeywell.scene7.com/is/content/"
-                          data-wcmdisabled=""
-                          data-dms7=""
-                          data-mode="smartcrop"
-                          className="s7dm-dynamic-media"
-                        >
-                          <div className="s7responsiveContainer">
-                            <img
-                              id="superhero-2306_resp"
-                              data-src="https://honeywell.scene7.com/is/image/honeywell/CyberInsights_Carousel2"
-                              src="https://honeywell.com/content/dam/placeholder-images/mosaic-1-1-placeholder.png"
-                              className="fluidimage lazy"
-                              data-mode="smartcrop"
-                              style={{ width: "100%" }}
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="img-overlay-dark">
-                      <div
-                        className="mvp-hero-image mvp2 clearfix"
-                        data-bg-mobile="//honeywell.scene7.com/is/image/honeywell/CyberInsights_Carousel2:4-5-mobile-hero"
-                      >
-                        <div className="container-fluid h-100">
-                          {/* TO DO: Top Left html */}
-                          <div className="d-flex justify-content-start">
-                            <div className="text-left col-lg-10 offset-lg-1 superhero-heading">
-                              <h1 className="header1">
-                                <span className="text-red">Accelerate</span>
-                                <span className="text-red">
-                                  Digital Transformation
-                                </span>
-                                <span className="text-white">in </span>
-                                <span className="text-white">IT/High-Tech</span>
-                              </h1>
-                              <p className="text-white subheadline d-none d-md-block" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="responsivegrid bg-light-gray p-30 aem-GridColumn aem-GridColumn--default--12">
-                  <div className="aem-Grid aem-Grid--12 aem-Grid--default--12 aem-Grid--phone--12 ">
-                    <div className="sectiontitle text-left pt-10 pb-20 pl-0 pr-0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0">
-                      {/*Anchor ID */}
-                      {/*Section title V1*/}
-                      <h2 className="section-title" />
-                      {/*Section title V2*/}
-                      {/*Section subtitle V1*/}
-                      <h5 className="section-subtitle">
-                        Save valuable time in the face of threats by being
-                        proactive about cybersecurity. Combine robust reporting
-                        and advanced data insights to find vulnerabilities and
-                        simplify managing your cyber posture for even the most
-                        complex OT environments. To reduce risk, our industrial
-                        grade software technologies provide upfront safeguards
-                        and the agility to rapidly identify and respond to
-                        threats—while helping you accelerate along the path of
-                        digital transformation.
-                      </h5>
-                      {/*Section subtitle V2*/}
-                    </div>
-                  </div>
-                </div>
+                {entry.content.map((item, key) => {
+                  if (item.hasOwnProperty("hero")) {
+                    return <Hero key={key} data={item.hero} />
+                  }
+                  if (item.hasOwnProperty("articles")) {
+                    return <ManufacturingArticles key={key} data={item.articles}/>
+                  }
+                  if (item.hasOwnProperty("carousel")) {
+                    return <Carousel key={key} data={item.carousel}/>
+                  }
+                  if (item.hasOwnProperty("text_cta")) {
+                    return <TextCTA key={key} data={item.text_cta}/>
+                  }
+                })}
                 <div className="responsivegrid p-30 aem-GridColumn aem-GridColumn--default--12">
                   <div className="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
                     <div className="sectiontitle section-title--h-medium text-left pt-0 pb-20 aem-GridColumn aem-GridColumn--default--12">
