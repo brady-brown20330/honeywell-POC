@@ -23,7 +23,7 @@ export default function ManufacturingArticles ({data}) {
                     aria-label="Click on tile Inside A Gigafactory: What Goes On in Battery Production Powerhouses"
                     className=""
                     target="_self"
-                    href="/us/en/news/2023/09/inside-a-gigafactory-what-goes-on-in-battery-production-powerhouses"
+                    href={data.card.article[0].url}
                   >
                     <div className="tile-grid-image">
                       {/*
