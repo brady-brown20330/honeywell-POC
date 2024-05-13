@@ -1,4 +1,9 @@
 export default function Hero({ data }) {
+
+  var imageUrl = ""
+  if (data.image) {
+    imageUrl = data.image.url
+  }
   return (
     <>
       <div className="superhero superhero-v2 header1-large aem-GridColumn aem-GridColumn--default--12">
@@ -10,7 +15,7 @@ export default function Hero({ data }) {
           <style
             dangerouslySetInnerHTML={{
               __html:
-                `\n .mvp-hero-image {\n                    background-image: url("${data.image.url}");\n                }\n                @media (min-width: 768px) {\n                    .mvp-hero-image {\n                        background-image: url("${data.image.url}");\n                    }\n                }\n            `,
+                `\n .mvp-hero-image {\n                    background-image: url("${imageUrl}");\n                }\n                @media (min-width: 768px) {\n                    .mvp-hero-image {\n                        background-image: url("${imageUrl}");\n                    }\n                }\n            `,
             }}
           />
           <div>
@@ -37,8 +42,8 @@ export default function Hero({ data }) {
                 <div className="s7responsiveContainer">
                   <img
                     id="superhero-2681_resp"
-                    data-src={data.image.url + 1}
-                    src={data.image.url}
+                    data-src={imageUrl}
+                    src={imageUrl}
                     className="fluidimage lazy"
                     data-mode="smartcrop"
                     style={{ width: "100%" }}

@@ -3857,8 +3857,8 @@ export default function Page({ params }) {
                           className="s7dm-dynamic-media"
                         >
                           <img
-                            src={entry.banner_image.url}
-                            alt="Lithium-ion batteries being produced by an automated machine"
+                            src={entry.banner_image ? entry.banner_image.url : ''}
+                            
                           />
                         </div>
                       </div>
@@ -3883,8 +3883,8 @@ export default function Page({ params }) {
                           className="s7dm-dynamic-media"
                         >
                           <img
-                            src={entry.banner_image.url}
-                            alt="Lithium-ion batteries being produced by an automated machine"
+                            src={entry.banner_image ? entry.banner_image.url : ''}
+                            
                           />
                         </div>
                       </div>

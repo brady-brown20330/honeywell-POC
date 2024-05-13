@@ -20,10 +20,9 @@ export default function ManufacturingArticles ({data}) {
                   <a
                     role="link"
                     rel="noreferrer"
-                    aria-label="Click on tile Inside A Gigafactory: What Goes On in Battery Production Powerhouses"
                     className=""
                     target="_self"
-                    href={data.card.article[0].url}
+                    href={data.card.article[0]?.url}
                   >
                     <div className="tile-grid-image">
                       {/*
@@ -45,7 +44,6 @@ export default function ManufacturingArticles ({data}) {
                           data-wcmdisabled=""
                           data-dms7=""
                           data-mode="smartcrop"
-                          data-alt="Inside A Gigafactory: What Goes On in Battery Production Powerhouses"
                           data-istransparentpng="false"
                           className="lazy-load s7dm-dynamic-media"
                         >
@@ -53,9 +51,8 @@ export default function ManufacturingArticles ({data}) {
                             <img
                               id="tile_grid-7655_resp"
                               data-src="https://honeywell.scene7.com/is/image/honeywell/hon-ab_lithium-ion-battery-production:3-2-list"
-                              src={data.card.article[0].banner_image.url}
+                              src={data.card.article[0]?.banner_image.url}
                               data-mode="smartcrop"
-                              alt="Inside A Gigafactory: What Goes On in Battery Production Powerhouses"
                               style={{ width: "100%" }}
                             />
                           </div>
@@ -64,7 +61,7 @@ export default function ManufacturingArticles ({data}) {
                     </div>
                     <div className="tile-grid-streach-image-light-grey-boxshadow">
                       <div className="tile-grid-title">
-                        {data.card.article[0].title}
+                        {data.card.article[0]?.title}
                       </div>
                       <div className="tile-detail">
                         <div
@@ -74,7 +71,6 @@ export default function ManufacturingArticles ({data}) {
                       </div>
                       <div
                         role="link"
-                        aria-label=" about Inside A Gigafactory: What Goes On in Battery Production Powerhouses"
                         className="cta cta--tertiary aem-GridColumn aem-GridColumn--default--12"
                       >
                         <span className="tile-grid-btn">

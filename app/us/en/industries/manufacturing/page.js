@@ -3516,13 +3516,6 @@ export default function Manufacturing() {
                     return <TextCTA key={key} data={item.text_cta}/>
                   }
                 })}
-                
-
-                
-
-                
-
-                
 
               </div>
             </div>
